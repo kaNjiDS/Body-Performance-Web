@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# FitTrack Pro
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**FitTrack Pro** is a modern, free fitness web application that empowers users to track, measure, and optimize their body performance using smart calculators, machine learning predictions, and expert exercise technique guidance.
 
-## Available Scripts
+All core calculations run client-side for speed and privacy — no personal data is stored on servers.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Calories Burned Predictor**  
+  ML-powered (XGBoost) estimation using gender, age, weight, height, duration, heart rate, and body temperature
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Measures Hub** (Body Composition Calculators)  
+  - BMI  
+  - Body Fat % (U.S. Navy method)  
+  - Max Heart Rate Zones  
+  - Calorie Deficit/Surplus Planner  
+  - Daily Macro Targets (protein, carbs, fat)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Exercise Tips & Technique Tutorials**  
+  High-quality embedded YouTube videos showing correct form for squats, deadlifts, bench press, pull-ups, lunges, planks, and more
 
-### `npm test`
+- **Clean, Responsive Dark Theme**  
+  Mobile-friendly UI with smooth navigation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Privacy-First**  
+  Most features work offline after initial load — no login required
 
-### `npm run build`
+## Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Frontend**  
+- React (with React Router)  
+- Bootstrap 5  
+- Axios (for API calls)  
+- React Icons  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Backend**  
+- Flask (Python)  
+- XGBoost (machine learning model)  
+- Pickle (model serialization)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Structure
 
-### `npm run eject`
+The website will automatically open in your browser at:  
+**http://localhost:3000**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Summary – Quick Commands
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Terminal 1 (Backend):**
+- Right-click → backend → Open in Integrated Terminal
+- `venv\Scripts\activate`
+- `python app.py`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Terminal 2 (Frontend):**
+- Right-click → frontend → Open in Integrated Terminal
+- `npm start`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Open http://localhost:3000 → ready to use!
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
